@@ -75,7 +75,25 @@ irb(main):027:0> var1.eql?("hello")
 ------------------------------------
 
 ● Program: Check if a String is numeric
+
+def is_number? string
+irb(main):062:1>   true if Float(string) rescue false
+irb(main):063:1> end
+=> :is_number?
+irb(main):064:0> myString
+=> "Ruby"
+irb(main):065:0> is_number?(myString)
+=> false
+             (OR)
+myString="123.5"
+=> "123.5"
+irb(main):068:0> is_number?(myString)
+=> true
+----------------------------------------------
+
 ● Program: Check if two Strings are an anagram
+
+
 ● Program: Compute all permutations of the String
 
 --------------------------
@@ -109,6 +127,14 @@ irb(main):046:0> msg
 ---------------------------------------------------------
 
 ● Program: Capitalise the first character of each word in String
+
+ msg
+=> "this is message"
+irb(main):057:0> puts msg.split.map(&:capitalize).join(' ')
+This Is Message
+=> nil
+--------------------------------------------------------
+
 ● Program: Iterate through all characters in a String
 ● Program: Check if a String contains a substring
 ● Program: Extract a substring from a String
