@@ -1,15 +1,111 @@
-<html>
-<body>
-●<h> Program: Reverse a String</h>
 
+● Program: Reverse a String
+
+msg="nikita"
+=> "nikita"
+irb(main):005:0> msg.reverse
+=> "atikin"
+-----------------------
 
 ● Program: Concatenate multiple Strings
+
+ msg1="good"
+=> "good"
+irb(main):007:0> msg2="morning"
+=> "morning"
+irb(main):008:0> msg1+" "+msg2
+=> "good morning"
+----------------------------
+
 ● Program: Extract Character in a String
+
+puts msg
+this is a message
+=> nil
+irb(main):032:0> msg[5].chr
+=> "i"
+irb(main):033:0> msg[0].chr
+=> "t"
+-----------------------------------
+
 ● Program: Replace a Character in a String
+
+myString="ruby"
+=> "ruby"
+irb(main):014:0> myString["r"]="R"
+=> "R"
+irb(main):015:0> puts myString
+Ruby
+=> nil
+-----------------------------------
+
 ● Program: Replace all Characters in a String
+
+ myString="hello welcome"
+=> "hello welcome"
+irb(main):011:0> myString["hello"]="Hii"
+=> "Hii"
+irb(main):012:0> puts myString
+Hii welcome
+=> nil
+------------------------------
+
 ● Program: Find occurrences of a given character
 
+ msg="this is a message"
+=> "this is a message"
+irb(main):029:0> puts msg.count('e')
+2
+=> nil
+irb(main):030:0> puts msg.count('s')
+4
+=> nil
+---------------------------------
+
+● Program: Compare Strings
+
+ var1="hello"
+=> "hello"
+irb(main):025:0> var2="Ruby"
+=> "Ruby"
+irb(main):026:0> var1==var2
+=> false
+irb(main):027:0> var1.eql?("hello")
+=> true
+------------------------------------
+
+● Program: Check if a String is numeric
+● Program: Check if two Strings are an anagram
+● Program: Compute all permutations of the String
+● Program: Convert all letters of a String to Lower-case characters
+● Program: Convert all letters of a String to Upper-case characters
+● Program: Capitalise the first character of each word in String
+● Program: Iterate through all characters in a String
+● Program: Check if a String contains a substring
+● Program: Extract a substring from a String
+
+--------------------------------
+
+● Program: Get the index of a character in a String
+
+puts msg
+nikita
+=> nil
+irb(main):017:0> msg.index("a")
+=> 5
+irb(main):018:0> msg.index("n")
+=> 0
+--------------------------------
+
+● Program: Convert String to a character array
+
+msg.chars
+=> ["n", "i", "k", "i", "t", "a"]
+-------------------------------------
+
+● Program: Check if a String is a valid shuffle of two different Strings
+● Program: Check if a String is a Palindrome
+● Program: Remove all whitespaces from a String
 
 
-</body>
-</html>
+
