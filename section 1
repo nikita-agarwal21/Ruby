@@ -77,8 +77,37 @@ irb(main):027:0> var1.eql?("hello")
 ● Program: Check if a String is numeric
 ● Program: Check if two Strings are an anagram
 ● Program: Compute all permutations of the String
+
+--------------------------
+
 ● Program: Convert all letters of a String to Lower-case characters
+
+msg
+=> "THIS IS MESSAGE"
+irb(main):047:0> msg.downcase
+=> "this is message"
+irb(main):048:0> msg
+=> "THIS IS MESSAGE"
+irb(main):049:0> msg.downcase!
+=> "this is message"
+irb(main):050:0> msg
+=> "this is message"
+----------------------------------------
+
 ● Program: Convert all letters of a String to Upper-case characters
+
+ msg="this is message"
+=> "this is message"
+irb(main):043:0> msg.upcase //creates a copy
+=> "THIS IS MESSAGE"
+irb(main):044:0> msg
+=> "this is message"
+irb(main):045:0> msg.upcase! //works on same object
+=> "THIS IS MESSAGE"
+irb(main):046:0> msg
+=> "THIS IS MESSAGE"
+---------------------------------------------------------
+
 ● Program: Capitalise the first character of each word in String
 ● Program: Iterate through all characters in a String
 ● Program: Check if a String contains a substring
