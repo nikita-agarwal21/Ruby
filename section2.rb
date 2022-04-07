@@ -122,9 +122,27 @@ small number is 1
  ---------------------------------------
   
 ● Program: Check whether String is Empty or Null
+ 
+  "".empty?
+=> true
+irb(main):006:0> "this is not empty string".empty?
+=> false
+-------------------------------------
+  
 ● Program - Calculate Sum of Natural numbers
  
+  def sum(num)
+irb(main):008:1> res=0
+irb(main):009:1> for i in 1..num
+irb(main):010:2>    res=res+i
+irb(main):011:2> end
+irb(main):012:1> p "the sum of #{num} number is #{res}"
+irb(main):013:1> end
+=> :sum
+irb(main):014:0> sum(10)
+"the sum of 10 number is 55"
 ----------------------------------------------
+  
 ● Program - Display Fibonacci Series
  
  def fibonacci( n )
@@ -178,15 +196,26 @@ irb(main):010:0> countdigits(123451)
 => nil
 ----------------------------------------
   
-● Program - Calculate the power of a number
 ● Program - Display prime numbers between two intervals
 ● Program - Convert Binary to the Decimal number and vice versa
 ● Program - Convert Octal to the Decimal number and vice versa
 ● Program - Convert Octal to Binary number and vice versa
 ● Program - Convert Hexadecimal to the Decimal number and vice versa
 ● Program: Display factors of a number
+ -------------------------------------------
+  
 ● Program: Display all prime numbers from 1 to N
  
+  require 'prime'
+=> true
+irb(main):002:0> Prime.each(10) do |prime|
+irb(main):003:1* p prime
+irb(main):004:1> end
+2
+3
+5
+7
+=> 7
  ----------------------------------------------
   
 ● Program - Program to Reverse a String
