@@ -120,22 +120,38 @@ small number is 1
 ● Program: Find all roots of a quadratic equation
 ● Program: Make a simple calculator using switch-case
 ● Program: Check whether String is Empty or Null
-
 ● Program - Calculate Sum of Natural numbers
-● Program - Generate Multiplication table
+ 
+----------------------------------------------
 ● Program - Display Fibonacci Series
+ 
+ def fibonacci( n )
+irb(main):002:1>     return  n  if n <= 1 
+irb(main):003:1>     fibonacci( n - 1 ) + fibonacci( n - 2 )
+irb(main):004:1> end 
+=> :fibonacci
+irb(main):005:0> puts fibonacci( 10 )
+55
+=> nil
+---------------------------------------------
 ● Program - Find GCD of two numbers
 ● Program - Find LCM of two numbers
 ● Program - Display Alphabets(A-Z)
 ● Program - Count the number of digits in an integer
 ● Program - Calculate the power of a number
-● Program - Check if a number is a prime number
 ● Program - Display prime numbers between two intervals
-● Program - Check Armstrong number
 ● Program - Convert Binary to the Decimal number and vice versa
 ● Program - Convert Octal to the Decimal number and vice versa
 ● Program - Convert Octal to Binary number and vice versa
 ● Program - Convert Hexadecimal to the Decimal number and vice versa
 ● Program: Display factors of a number
 ● Program: Display all prime numbers from 1 to N
+ 
+ ----------------------------------------------
+  
 ● Program - Program to Reverse a String
+
+ msg="good morning"
+=> "good morning"
+irb(main):003:0> msg.reverse
+=> "gninrom doog"
