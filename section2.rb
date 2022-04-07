@@ -119,6 +119,8 @@ small number is 1
   
 ● Program: Find all roots of a quadratic equation
 ● Program: Make a simple calculator using switch-case
+ ---------------------------------------
+  
 ● Program: Check whether String is Empty or Null
 ● Program - Calculate Sum of Natural numbers
  
@@ -135,9 +137,47 @@ irb(main):005:0> puts fibonacci( 10 )
 => nil
 ---------------------------------------------
 ● Program - Find GCD of two numbers
+ 
+  num1=10
+=> 10
+irb(main):005:0> num2=15
+=> 15
+irb(main):006:0> num1.gcd(num2)
+=> 5
+------------------------------
+  
 ● Program - Find LCM of two numbers
+
+  num1=10
+=> 10
+irb(main):002:0> num2=15
+=> 15
+irb(main):003:0> num1.lcm(num2)
+=> 30
+---------------------------
+  
 ● Program - Display Alphabets(A-Z)
+  ('A'..'Z').to_a
+=> ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+---------------------------------------------------------------------
+  
 ● Program - Count the number of digits in an integer
+ 
+ def countdigits(num)
+irb(main):002:1> temp=num
+irb(main):003:1> count=0
+irb(main):004:1> while(temp>0)
+irb(main):005:2>      count=count+1
+irb(main):006:2>      temp=temp/10
+irb(main):007:2> end
+irb(main):008:1> puts "#{num} has #{count}   digits"
+irb(main):009:1> end
+=> :countdigits
+irb(main):010:0> countdigits(123451)
+123451 has 6  digits
+=> nil
+----------------------------------------
+  
 ● Program - Calculate the power of a number
 ● Program - Display prime numbers between two intervals
 ● Program - Convert Binary to the Decimal number and vice versa
