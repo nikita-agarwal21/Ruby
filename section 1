@@ -188,6 +188,11 @@ irb(main):096:0> "good morning".include?("morning")
 
 ● Program: Extract a substring from a String
 
+ string="nikita agarwal"
+=> "nikita agarwal"
+irb(main):005:0> p string[1,6]
+"ikita "
+=> "ikita "
 --------------------------------
 
 ● Program: Get the index of a character in a String
@@ -209,6 +214,25 @@ msg.chars
 
 ● Program: Check if a String is a valid shuffle of two different Strings
 
+subject="abcd"
+=> "abcd"
+irb(main):011:0> search="cdba"
+=> "cdba"
+irb(main):012:0> subject=subject.chars.sort.join
+=> "abcd"
+irb(main):013:0> p search = search.chars.group_by(&:itself).values.map(&:join)
+["c", "d", "b", "a"]
+=> ["c", "d", "b", "a"]
+                  (OR)
+subject="good morning"
+=> "good morning"
+irb(main):016:0> search="afternoon"
+=> "afternoon"
+irb(main):017:0> subject=subject.chars.sort.join
+=> " dggimnnooor"
+irb(main):018:0> p search = search.chars.group_by(&:itself).values.map(&:join)
+["a", "f", "t", "e", "r", "nn", "oo"]
+=> ["a", "f", "t", "e", "r", "nn", "oo"]
 ------------------------------------------------------
 
 ● Program: Check if a String is a Palindrome
