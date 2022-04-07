@@ -201,7 +201,7 @@ irb(main):010:0> countdigits(123451)
 ● Program - Convert Octal to the Decimal number and vice versa
 ● Program - Convert Octal to Binary number and vice versa
 ● Program - Convert Hexadecimal to the Decimal number and vice versa
-● Program: Display factors of a number
+
  -------------------------------------------
   
 ● Program: Display all prime numbers from 1 to N
